@@ -22,7 +22,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class FragmentHome extends Fragment implements AdapterView.OnItemClickListener {
+public class FragmentMenuMaps extends Fragment implements AdapterView.OnItemClickListener {
 
     private ListView listView;
     private String JSON_STRING;
@@ -31,7 +31,7 @@ public class FragmentHome extends Fragment implements AdapterView.OnItemClickLis
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_menu_maps, container, false);
         listView = (ListView) view.findViewById(R.id.listView);
         listView.setOnItemClickListener(this);
         getJSON();

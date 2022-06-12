@@ -4,26 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import android.app.ProgressDialog;
-import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ListAdapter;
-import android.widget.ListView;
-import android.widget.SimpleAdapter;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -46,10 +32,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
                     switch(item.getItemId()) {
                         case R.id.home:
-                            selectedFragment = new FragmentHome();
+                            selectedFragment = new FragmentMenuMaps();
                             break;
                         case R.id.test:
-                            selectedFragment = new FragmentTest();
+                            selectedFragment = new FragmentMenuTest();
                             break;
                     }
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
