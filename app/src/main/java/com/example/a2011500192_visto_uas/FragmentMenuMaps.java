@@ -49,19 +49,27 @@ public class FragmentMenuMaps extends Fragment implements AdapterView.OnItemClic
                 JSONObject jo = result.getJSONObject(i);
                 String id = jo.getString(DBConfiguration.TAG_ID);
                 String name = jo.getString(DBConfiguration.TAG_MAP_NAME);
+                String address = jo.getString(DBConfiguration.TAG_MAP_ADDRESS);
+                String phone = jo.getString(DBConfiguration.TAG_MAP_PHONE);
+                String availability = jo.getString(DBConfiguration.TAG_MAP_AVAILABILITY);
+                String link = jo.getString(DBConfiguration.TAG_MAP_LINK);
 
                 HashMap<String,String> mhs = new HashMap<>();
                 mhs.put(DBConfiguration.TAG_ID,id);
                 mhs.put(DBConfiguration.TAG_MAP_NAME,name);
+                mhs.put(DBConfiguration.TAG_MAP_ADDRESS,address);
+                mhs.put(DBConfiguration.TAG_MAP_PHONE,phone);
+                mhs.put(DBConfiguration.TAG_MAP_AVAILABILITY,availability);
+                mhs.put(DBConfiguration.TAG_MAP_LINK,link);
                 list.add(mhs);
             }
         }
         catch (JSONException e) { e.printStackTrace();
         }
         ListAdapter adapter = new SimpleAdapter(
-                getActivity(), list, R.layout.list_map,
-                new String[]{DBConfiguration.TAG_ID,DBConfiguration.TAG_MAP_NAME},
-                new int[]{R.id.mapid, R.id.mapnama});
+                getActivity(), list, R.layout.list_menu_map,
+                new String[]{DBConfiguration.TAG_MAP_NAME, DBConfiguration.TAG_MAP_ADDRESS, DBConfiguration.TAG_MAP_AVAILABILITY},
+                new int[]{R.id.mapnama, R.id.mapaddress, R.id.mapavailability});
         listView.setAdapter(adapter);
     }
     private void getJSON(){
@@ -70,7 +78,7 @@ public class FragmentMenuMaps extends Fragment implements AdapterView.OnItemClic
             @Override
             protected void onPreExecute() {
                 super.onPreExecute();
-                loading = ProgressDialog.show(getActivity(),"Mengambil Data","Mohon Tunggu...",false,false);
+                loading = ProgressDialog.show(getActivity(),"Fetching Data","Please Wait...",false,false);
             }
             @Override
             protected void onPostExecute(String s) {

@@ -42,7 +42,7 @@
                         android:textSize="16dp" />
 
                     <TextView
-                        android:id="@+id/mapid"
+                        android:id="@+id/mapaddress"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
