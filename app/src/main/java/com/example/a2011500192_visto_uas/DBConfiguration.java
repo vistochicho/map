@@ -4,7 +4,7 @@ public class DBConfiguration {
     public static final String URL_ADD = "localhost/add.php";
     public static final String URL_GET_MHS = "localhost/detail.php?id=";
     public static final String URL_GET_ALL = "localhost/read.php";
-    public static final String URL_UPDATE_MHS = "localhost/update.php";
+    public static final String URL_UPDATE_MHS = "hlocalhost/update.php";
     public static final String URL_DELETE_MHS = "localhost/delete.php?id=";
 
     //    Request to PHP
