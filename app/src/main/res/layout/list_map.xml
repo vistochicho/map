@@ -5,7 +5,6 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -13,7 +12,7 @@
             android:id="@+id/rectangle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/radius"
+            android:background="@drawable/radius_content"
             android:elevation="12dp"
             android:orientation="vertical"
             android:padding="20dp">

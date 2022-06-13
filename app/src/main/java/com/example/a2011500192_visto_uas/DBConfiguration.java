@@ -1,11 +1,11 @@
 package com.example.a2011500192_visto_uas;
 
 public class DBConfiguration {
-    public static final String URL_ADD = "http:192.168.1.8/vistouasapi/add.php";
-    public static final String URL_GET_MHS = "http:192.168.1.8/vistouasapi/detail.php?id=";
-    public static final String URL_GET_ALL = "http:192.168.1.8/vistouasapi/read.php";
-    public static final String URL_UPDATE_MHS = "http:192.168.1.8/vistouasapi/update.php";
-    public static final String URL_DELETE_MHS = "http:192.168.1.8/vistouasapi/delete.php?id=";
+    public static final String URL_ADD = "http:192.168.1.10/vistouasapi/add.php";
+    public static final String URL_GET_MHS = "http:192.168.1.10/vistouasapi/detail.php?id=";
+    public static final String URL_GET_ALL = "http:192.168.1.10/vistouasapi/read.php";
+    public static final String URL_UPDATE_MHS = "http:192.168.1.10/vistouasapi/update.php";
+    public static final String URL_DELETE_MHS = "http:192.168.1.10/vistouasapi/delete.php?id=";
 
     //    Request to PHP
     public static final String KEY_MHS_ID = "id";

@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".FragmentMenuMaps">
 
-    <!-- TODO: Update blank fragment layout -->
     <ListView
         android:divider="@android:color/transparent"
         android:dividerHeight="20.0sp"

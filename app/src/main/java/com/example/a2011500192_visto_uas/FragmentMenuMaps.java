@@ -1,6 +1,7 @@
 package com.example.a2011500192_visto_uas;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
@@ -38,7 +39,7 @@ public class FragmentMenuMaps extends Fragment implements AdapterView.OnItemClic
         return view;
     }
 
-    private void showMahasiswa(){
+    private void showMap(){
         JSONObject jsonObject = null;
         ArrayList<HashMap<String,String>> list = new ArrayList<>();
         try {
@@ -58,7 +59,7 @@ public class FragmentMenuMaps extends Fragment implements AdapterView.OnItemClic
         catch (JSONException e) { e.printStackTrace();
         }
         ListAdapter adapter = new SimpleAdapter(
-                getActivity(), list, R.layout.list_item,
+                getActivity(), list, R.layout.list_map,
                 new String[]{DBConfiguration.TAG_ID,DBConfiguration.TAG_MAP_NAME},
                 new int[]{R.id.mapid, R.id.mapnama});
         listView.setAdapter(adapter);
@@ -76,7 +77,7 @@ public class FragmentMenuMaps extends Fragment implements AdapterView.OnItemClic
                 super.onPostExecute(s);
                 loading.dismiss();
                 JSON_STRING = s;
-                showMahasiswa();
+                showMap();
             }
             @Override protected String doInBackground(Void... params) { DBRequestHandler rh = new DBRequestHandler();
                 Log.d("testing","test");
@@ -91,7 +92,11 @@ public class FragmentMenuMaps extends Fragment implements AdapterView.OnItemClic
     }
 
     @Override
-    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        Intent intent = new Intent(getActivity(), MapsActivity.class);
+        HashMap<String,String> map =(HashMap)parent.getItemAtPosition(position);
+        String mapId = map.get(DBConfiguration.TAG_ID).toString();
+        intent.putExtra(DBConfiguration.MAP_ID,mapId);
+        startActivity(intent);
     }
 }
