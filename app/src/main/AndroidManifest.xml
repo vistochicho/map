@@ -3,6 +3,8 @@
     package="com.example.a2011500192_visto_uas">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.2011500192_Visto_UAS"
         android:usesCleartextTraffic="true">
-
+        <activity
+            android:name=".UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateActivity"
+            android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 

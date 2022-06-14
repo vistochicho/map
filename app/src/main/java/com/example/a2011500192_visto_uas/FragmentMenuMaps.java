@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.SimpleAdapter;
 
 import org.json.JSONArray;
@@ -52,7 +53,6 @@ public class FragmentMenuMaps extends Fragment implements AdapterView.OnItemClic
                 String address = jo.getString(DBConfiguration.TAG_MAP_ADDRESS);
                 String phone = jo.getString(DBConfiguration.TAG_MAP_PHONE);
                 String availability = jo.getString(DBConfiguration.TAG_MAP_AVAILABILITY);
-                String link = jo.getString(DBConfiguration.TAG_MAP_LINK);
 
                 HashMap<String,String> mhs = new HashMap<>();
                 mhs.put(DBConfiguration.TAG_ID,id);
@@ -60,7 +60,6 @@ public class FragmentMenuMaps extends Fragment implements AdapterView.OnItemClic
                 mhs.put(DBConfiguration.TAG_MAP_ADDRESS,address);
                 mhs.put(DBConfiguration.TAG_MAP_PHONE,phone);
                 mhs.put(DBConfiguration.TAG_MAP_AVAILABILITY,availability);
-                mhs.put(DBConfiguration.TAG_MAP_LINK,link);
                 list.add(mhs);
             }
         }
@@ -104,7 +103,11 @@ public class FragmentMenuMaps extends Fragment implements AdapterView.OnItemClic
         Intent intent = new Intent(getActivity(), MapsActivity.class);
         HashMap<String,String> map =(HashMap)parent.getItemAtPosition(position);
         String mapId = map.get(DBConfiguration.TAG_ID).toString();
+        String latId = map.get(DBConfiguration.TAG_MAP_LAT);
+        String longId = map.get(DBConfiguration.TAG_MAP_LONG);
         intent.putExtra(DBConfiguration.MAP_ID,mapId);
+        intent.putExtra(DBConfiguration.MAP_LAT,latId);
+        intent.putExtra(DBConfiguration.MAP_LONG,longId);
         startActivity(intent);
     }
 }

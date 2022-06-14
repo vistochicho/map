@@ -1,10 +1,13 @@
 package com.example.a2011500192_visto_uas;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.fragment.app.FragmentActivity;
@@ -23,7 +26,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.w3c.dom.Text;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, View.OnClickListener {
 
     private GoogleMap mMap;
     private ActivityMapsBinding binding;
@@ -39,12 +42,18 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         binding = ActivityMapsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        RelativeLayout relativeLayout = findViewById(R.id.update);
+        relativeLayout.setOnClickListener(this);
+
         LinearLayout linearLayout = findViewById(R.id.design_bottom_sheet);
         bottomSheetBehavior = BottomSheetBehavior.from(linearLayout);
 
         bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
 
         id = getIntent().getStringExtra(DBConfiguration.MAP_ID);
+
+
+
         textViewName = (TextView) findViewById(R.id.mapname);
         textViewAvailability = (TextView) findViewById(R.id.mapavailability);
         textViewMapPhone = (TextView) findViewById(R.id.mapphone);
@@ -71,7 +80,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-6.4626171, 106.6492959);
+        LatLng sydney = new LatLng(-1011, 100.1211);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
 
@@ -124,14 +133,18 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Log.d("mapdebug", ava);
             Log.d("mapdebug", pho);
             Log.d("mapdebug", det);
+//            Log.d("mapdebug", lon);
             textViewName.setText(name);
             textViewAvailability.setText(ava);
             textViewMapPhone.setText(pho);
             textViewDetails.setText(det);
-
         } catch (JSONException e) {
             e.printStackTrace();
         }
     }
 
+    @Override
+    public void onClick(View view) {
+        startActivity(new Intent(MapsActivity.this, UpdateActivity.class));
+    }
 }

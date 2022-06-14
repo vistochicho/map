@@ -12,7 +12,8 @@ public class DBConfiguration {
     public static final String KEY_MHS_MAP_ADDRESS = "mapaddress";
     public static final String KEY_MHS_MAP_PHONE = "mapphone";
     public static final String KEY_MHS_MAP_AVAILABILITY = "mapavailability";
-    public static final String KEY_MHS_MAP_LINK = "maplink";
+    public static final String KEY_MHS_MAP_LAT = "latitude";
+    public static final String KEY_MHS_MAP_LONG = "longitude";
 
     //    JSON Tags
     public static final String TAG_JSON_ARRAY = "result";
@@ -21,9 +22,12 @@ public class DBConfiguration {
     public static final String TAG_MAP_ADDRESS = "mapaddress";
     public static final String TAG_MAP_PHONE = "mapphone";
     public static final String TAG_MAP_AVAILABILITY = "mapavailability";
-    public static final String TAG_MAP_LINK = "maplink";
+    public static final String TAG_MAP_LAT = "latitude";
+    public static final String TAG_MAP_LONG = "longitude";
 
     //ID Mahasiswa
     public static final String MAP_ID = "map_id";
+    public static final String MAP_LAT = "latitude";
+    public static final String MAP_LONG = "longitude";
 
 }

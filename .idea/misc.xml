@@ -6,7 +6,9 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/2011500192_Visto_UAS/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1995" />
         <entry key="..\:/Users/User/AndroidStudioProjects/2011500192_Visto_UAS/app/src/main/res/drawable/add.xml" value="0.2085" />
         <entry key="..\:/Users/User/AndroidStudioProjects/2011500192_Visto_UAS/app/src/main/res/drawable/button.xml" value="0.2085" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/2011500192_Visto_UAS/app/src/main/res/drawable/circle.xml" value="0.1735" />
         <entry key="..\:/Users/User/AndroidStudioProjects/2011500192_Visto_UAS/app/src/main/res/drawable/home.xml" value="0.2085" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/2011500192_Visto_UAS/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.1735" />
         <entry key="..\:/Users/User/AndroidStudioProjects/2011500192_Visto_UAS/app/src/main/res/drawable/ic_baseline_remove_24.xml" value="0.1255" />
         <entry key="..\:/Users/User/AndroidStudioProjects/2011500192_Visto_UAS/app/src/main/res/drawable/ic_launcher_background.xml" value="0.126" />
         <entry key="..\:/Users/User/AndroidStudioProjects/2011500192_Visto_UAS/app/src/main/res/drawable/radius.xml" value="0.244" />
@@ -14,6 +16,7 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/2011500192_Visto_UAS/app/src/main/res/drawable/radius_content.xml" value="0.104" />
         <entry key="..\:/Users/User/AndroidStudioProjects/2011500192_Visto_UAS/app/src/main/res/drawable/radius_detail2.xml" value="0.126" />
         <entry key="..\:/Users/User/AndroidStudioProjects/2011500192_Visto_UAS/app/src/main/res/drawable/radius_details.xml" value="0.1255" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/2011500192_Visto_UAS/app/src/main/res/layout/activity_create.xml" value="0.15353260869565216" />
         <entry key="..\:/Users/User/AndroidStudioProjects/2011500192_Visto_UAS/app/src/main/res/layout/activity_list_view.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/User/AndroidStudioProjects/2011500192_Visto_UAS/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/2011500192_Visto_UAS/app/src/main/res/layout/activity_maps.xml" value="0.2" />
