@@ -26,6 +26,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.w3c.dom.Text;
 
+import java.util.HashMap;
+
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, View.OnClickListener {
 
     private GoogleMap mMap;
@@ -145,6 +147,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void onClick(View view) {
-        startActivity(new Intent(MapsActivity.this, UpdateActivity.class));
+        Intent intent = new Intent(MapsActivity.this, UpdateActivity.class);
+        intent.putExtra(DBConfiguration.MAP_ID,id);
+        startActivity(intent);
     }
 }
