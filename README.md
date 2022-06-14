@@ -30,6 +30,6 @@ Run the app, voila.
 ## How-To
 1. Run the Project
 2. Find the Map that you were looking for
-3. You can direct from your location to the target map by clicking the marker on the map, a button will appear on the bottom right, then press it.
-4. You can also update the map if you think there were any mistake written on the map by swiping the menu on the bottom of the Activity, the press the pencil button.
-5. If you find a map that were not available on the Google Map and wanted to put it on the App, you can input by clicking the "Plus" button on the main menu.
+3. You can direct to the target map from your location by clicking the marker that were on the map, a button will appear on the bottom right of the Activity, you can just press it and it will direct you to the google maps.
+4. You can also update the map if you think there were any mistake written on the map by swiping the menu on the bottom of the Activity, a pencil button will appear, press it.
+5. If you find a map that were not available on the Google Map and wanted to put it on the App, Click the "plus" button on the main menu, however you must be right in the place where you wanted the map to be, cause it's getting your current location.
