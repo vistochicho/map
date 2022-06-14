@@ -8,9 +8,14 @@ The reason why i created this app was because from a real-life experience where 
 This app was created for my final exams.
 
 ## Table of contents
+* [General](#general)
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [How-To](#how-to)
+
+## General
+Name: **Visto Septiano Anugerah Putera<br>**
+NIM: **2011500192**
 
 ## Technologies
 Project is created with:
