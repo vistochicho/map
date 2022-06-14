@@ -156,6 +156,6 @@ public class UpdateActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View v) {
         updateMap();
-//        startActivity(new Intent(UpdateActivity.this, MainActivity.class));
+        startActivity(new Intent(UpdateActivity.this, MainActivity.class));
     }
 }

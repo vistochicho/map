@@ -2,6 +2,7 @@ package com.example.a2011500192_visto_uas;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
@@ -12,14 +13,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -35,6 +39,7 @@ public class FragmentMenuMaps extends Fragment implements AdapterView.OnItemClic
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_menu_maps, container, false);
         listView = (ListView) view.findViewById(R.id.listView);
+        TextView textView = view.findViewById(R.id.mapavailability);
         listView.setOnItemClickListener(this);
         getJSON();
         return view;
