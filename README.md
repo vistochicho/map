@@ -45,4 +45,4 @@ Run the app, voila.
 
 <br><br>
 
-######4.  If you find a map that were not available on the Google Map and wanted to put it on the App, Click the "plus" button on the main menu, however you must be right in the place where you wanted the map to be, cause it's getting your current location.
+###### 4.  If you find a map that were not available on the Google Map and wanted to put it on the App, Click the "plus" button on the main menu, however you must be right in the place where you wanted the map to be, cause it's getting your current location.
