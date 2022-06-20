@@ -32,9 +32,17 @@ Start your Apache and MySQL on XAMPP.
 Open your project from the place where you put your project directory.
 Run the app, voila.
 
-## How-To
-1. Run the Project
-2. Find the Map that you were looking for
-3. You can direct to the target map from your location by clicking the marker that were on the map, a button will appear on the bottom right of the Activity, you can just press it and it will direct you to the google maps.
-4. You can also update the map if you think there were any mistake written on the map by swiping the menu on the bottom of the Activity, a pencil button will appear, press it.
-5. If you find a map that were not available on the Google Map and wanted to put it on the App, Click the "plus" button on the main menu, however you must be right in the place where you wanted the map to be, cause it's getting your current location.
+## How-To-Use
+
+###### 1.  Find and click on the map that you want to direct and read the details on.<br>
+
+<br><br>
+###### 2.  You can direct to the target map from your location by clicking the marker that were on the map, a button will appear on the bottom right of the Activity, you can just press it and it will direct you to the google maps.
+
+<br><br>
+
+###### 3.  You can also update the map if you think there were any mistake written on the map by swiping the menu on the bottom of the Activity, a pencil button will appear, press it.
+
+<br><br>
+
+######4.  If you find a map that were not available on the Google Map and wanted to put it on the App, Click the "plus" button on the main menu, however you must be right in the place where you wanted the map to be, cause it's getting your current location.
