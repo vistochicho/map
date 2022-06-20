@@ -11,7 +11,7 @@ This app was created for my final exams.
 * [General](#general)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [How-To](#how-to)
+* [How-To-Use](#how-to-use)
 
 ## General
 Name: **Visto Septiano Anugerah Putera<br>**
